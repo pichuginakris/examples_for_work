@@ -4,9 +4,9 @@ import telebot
 import logging
 
 
-TOKEN = '1311481908:AAGZjTdBiSlmFjZzU6UJT_D1CjuTIImx5Eg'
+TOKEN = '*'
 bot = telebot.TeleBot(TOKEN)
-CHANNEL_NAME = '@project_errors'
+CHANNEL_NAME = '*'
 
 
 @bot.message_handler(content_types=['text'])
@@ -18,7 +18,7 @@ def creating_bd(country):
     logging.basicConfig(filename='logging_jooble.log', filemode='a',
                         format='%(process)s - %(asctime)s - %(levelname)s - %(message)s')
     try:
-        connect_str = "dbname='jooble' user='jooble' password='8VB&*g3htCMs' host='5.181.108.243'"
+        connect_str = "dbname='jooble' user='jooble' password='*' host='*'"
         # use our connection values to establish a connection
         conn = psycopg2.connect(connect_str)
         # create a psycopg2 cursor that can execute queries
