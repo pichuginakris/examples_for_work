@@ -18,7 +18,7 @@ def mes(text):
 
 def creating_bd(data, pointer):
     try:
-        connect_str = "dbname='jooble' user='jooble' password='8VB&*g3htCMs' host='5.181.108.243'"
+        connect_str = "dbname='jooble' user='jooble' password='*' host='*'"
         conn = psycopg2.connect(connect_str)
         cursor = conn.cursor()
         conn.commit()
